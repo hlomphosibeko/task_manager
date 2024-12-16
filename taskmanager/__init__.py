@@ -11,4 +11,4 @@ app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
 
 db = SQLAlchemy(app)
 
-from taskmanager import routes # noqa - No Quality Assurance
+from taskmanager import routes # noqa - No Quality Assurance # this import depends on the app and db file called before.
